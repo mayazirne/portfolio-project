@@ -10,15 +10,19 @@ body {
   font-family: var(--default-font-family);
 }
 
-h1 {
+h1,
+h2 {
   font-family: var(--heading-font-family);
   font-weight: bold;
+  color: black;
+}
+
+h1 {
   font-size: 96px;
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 36px;
+  font-size: 64px;
 }
 
 h3 {
@@ -29,28 +33,39 @@ h3 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
 }
 
-.primary-link {
-  justify-content: center;
+.hero p {
+  font-weight: bold;
+  font-size: 36px;
+  color: #272142;
+}
+
+.btn-branding {
   color: white;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   border-radius: 4px;
   padding: 15px 30px;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-weight: medium;
   font-size: 18px;
   line-height: 27px;
 }
 
-.primary-link:hover {
+.btn-branding:hover {
   color: white;
 }
 
+.btn-branding-outline {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 27px;
+}
 
 .homepage-link {
   color: var(--primary-color);
@@ -86,30 +101,39 @@ p {
   padding: 160px 20px;
 }
 
-@media (max-width: 576px) {
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  body {
+    text-align: center;
+  }
+  
   h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.5;
   }
 
   h2 {
-    font-size: 30px;
-    text-align: center;
-    color: #272142;
+    font-size: 44px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
   }
 
-   p {
-    text-align: center;
+   .hero p {
+    font-size: 30px;
   }
-  
-  .primary-link {
-    display: block;
-    text-align: center;
-    margin: 0 20px;
+
+  .hero {
+    padding: 80px 20px;
   }
- 
+
+  .project-description {
+    padding: 0;
+  }
+
 }
