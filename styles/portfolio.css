@@ -54,10 +54,6 @@ p {
   line-height: 27px;
 }
 
-.btn-branding:hover {
-  color: white;
-}
-
 .btn-branding-outline {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
